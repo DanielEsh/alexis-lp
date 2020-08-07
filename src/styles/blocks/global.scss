@@ -1,4 +1,5 @@
 @import "../../../node_modules/normalize.css/normalize";
+@import "../mixins/media";
 
 *,
 *::before,
@@ -20,4 +21,33 @@ img {
 
 a {
     text-decoration: none;
+}
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
 }
