@@ -8,20 +8,24 @@ header {
 
 .top-header {
     padding: 24px 0;
-    background: #fff;
-    .container{
+    background: $white;
+
+    .container {
         display: flex;
         justify-content: space-between;
     }
-    .header__nav {
+
+    .top-header__nav {
         .menu {
             display: flex;
             margin: 0;
+
             .menu__item {
                 list-style: none;
                 margin-left: 30px;
-                .menu__link{
-                    font-family: Poppins;
+
+                .menu__link {
+                    font-family: 'Poppins', sans-serif;
                     font-size: 14px;
                     font-weight: 500;
                     font-stretch: normal;
@@ -35,23 +39,24 @@ header {
     }
 }
 
-.header__content {
+.content {
     text-align: center;
-    .header__title{
+
+    .content__title {
         margin-top: 150px;
         margin-bottom: 40px;
         font-size: 60px;
-        font-weight: normal;
+        font-weight: bold;
         font-stretch: normal;
         font-style: normal;
         line-height: 1.42;
         letter-spacing: normal;
-        color: #ffffff;
+        color: $white;
     }
 
-    .header__btn{
+    .content__btn {
         border-radius: 25px;
-        background-color: #fc5f45;
+        background-color: $primary;
         padding: 15px 40px;
         font-family: Poppins;
         font-size: 16px;
@@ -60,7 +65,7 @@ header {
         font-style: normal;
         line-height: 5;
         letter-spacing: normal;
-        color: #ffffff;
+        color: $white;
         text-transform: uppercase;
     }
 
@@ -69,9 +74,11 @@ header {
         padding-bottom: 140px;
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         .content-details__item {
             width: 300px;
-            .content-details__desc{
+
+            p {
                 font-family: Poppins;
                 font-size: 18px;
                 font-weight: 500;
@@ -81,39 +88,90 @@ header {
                 letter-spacing: normal;
                 text-align: center;
             }
-            .content-details__desc_orange{
-                font-family: Poppins;
-                font-size: 18px;
-                font-weight: 500;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: 4.44;
-                letter-spacing: normal;
-                text-align: center;
-                color:#feb960
+
+            .orange {
+                color: $orange;
             }
-            .content-details__desc_green{
-                font-family: Poppins;
-                font-size: 18px;
-                font-weight: 500;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: 4.44;
-                letter-spacing: normal;
-                text-align: center;
-                color: #38c695;
+
+            .green {
+                color: $green;
             }
-            .content-details__desc_purple{
-                font-family: Poppins;
-                font-size: 18px;
-                font-weight: 500;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: 4.44;
-                letter-spacing: normal;
-                text-align: center;
-                color: #b27cf5;
+
+            .purple {
+                color: $purple;
             }
         }
+    }
+}
+
+.burger-menu{
+    z-index: 100;
+    display: none;
+    background: #000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    span{
+        display: block;
+        height: 2px;
+        width: 20px;
+        margin: 2px;
+        background: #888;
+    }
+}
+
+@media (max-width:1200px) {
+    .top-header {
+        .top-header__nav {
+            .menu {
+                .menu__item {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:$mediaTabletHorizontal) {
+    .top-header {
+        .top-header__nav {
+            position: relative;
+            .menu {
+                z-index: 0;
+                opacity: 0;
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                right: 0;
+                top: 0;
+                background: green;
+                transition: ease 1s all;
+                .menu__item{
+                    .menu__link{
+                        font-size: 20px;
+                    }
+                }
+            }
+            .menu.active{
+                opacity: 1;
+                right: 100px;
+                top: -25px;
+                li{
+                    a{
+                        font-size: 30px;
+                    }
+                }
+            }
+            .burger-menu{
+                display: flex;
+            }
+        }
+    }
+}
+
+@media (max-width: 550px){
+    .container{
+        padding: 0 40px;
     }
 }
