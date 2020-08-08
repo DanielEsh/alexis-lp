@@ -24,6 +24,7 @@
         letter-spacing: normal;
         text-align: center;
         color: #616161;
+        margin-bottom: 80px;
 
     }
 
@@ -71,6 +72,16 @@
         }
         .card__item-orange{
             border-bottom: 3px solid $orange;
+        }
+    }
+}
+
+@media (max-width:1000px){
+    .cards{
+        justify-content: center;
+        flex-wrap: wrap;
+        .card__item{
+            margin-bottom: 30px;
         }
     }
 }
