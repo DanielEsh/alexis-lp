@@ -1,0 +1,32 @@
+.video {
+    background: url(../img/video-bg.png) center center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    .video__content{
+        text-align: center;
+        .video__title {
+            margin: 0 0 30px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 30px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 2.67;
+            letter-spacing: normal;
+            color: #ffffff;
+        }
+        .video__desc{
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 5.33;
+            letter-spacing: normal;
+            color: #ffffff;
+            margin: 0;
+        }
+
+    }
+    
+}
