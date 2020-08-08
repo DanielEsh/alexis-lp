@@ -1,0 +1,70 @@
+@import "../mixins/media";
+
+.about {
+    display: flex;
+    margin-top: 150px;
+    margin-bottom: 350px;
+    .about__img {
+        width: 555px;
+        height: 700px;
+        background: url(../img/about-img.png);
+        position: absolute;
+    }
+
+    .about__desc {
+        position: relative;
+        left: 40%;
+        top: 80px;
+        background: #fff;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+        width: 650px;
+        .about__content{
+            padding: 30px 80px 60px 80px;
+        }
+        h2 {
+            font-size: 50px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.6;
+            letter-spacing: normal;
+            color: #313131;
+        }
+
+        p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.8;
+            letter-spacing: normal;
+            color: #616161;
+        }
+        .about__border{
+            height: 3px;
+            display: flex;
+            .border-primary{
+                height: 3px;
+                background: $primary;
+                width: 25%;
+            }
+            .border-green{
+                height: 3px;
+                background: $green;
+                width: 25%;
+            }
+            .border-purple{
+                height: 3px;
+                background: $purple;
+                width: 25%;
+            }
+            .border-orange{
+                height: 3px;
+                background: $orange;
+                width: 25%;
+            }
+            
+        }
+    }
+}
