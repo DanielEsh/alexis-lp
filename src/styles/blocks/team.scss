@@ -1,0 +1,106 @@
+.team {
+    background: #000;
+
+    .cards {
+        .card__item {
+            padding: 5px;
+        }
+    }
+
+    .tabs {
+        margin-top: 40px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+        padding: 40px 90px;
+
+        h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 4;
+            letter-spacing: normal;
+            text-align: left;
+            color: #272727;
+        }
+    }
+
+    .tabs__content {
+        display: flex;
+
+        p,
+        a {
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.8;
+            letter-spacing: normal;
+            text-align: left;
+            color: #616161;
+            padding-right: 100px;
+        }
+
+        .social {
+            border-left: 3px solid #efefef;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            padding-left: 45px;
+            justify-content: center;
+
+            a {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: $mediaTabletHorizontal) {
+    .tabs {
+        padding: 10px 40px !important;
+        .tabs__content{
+            p,a{
+                padding-right: 30px;
+            }
+            
+        }
+    }
+
+    .social {
+        div {
+            padding-left: 10px !important;
+        }
+    }
+}
+
+@media (max-width: $mediaTablet){
+    .tabs {
+        padding: 10px 40px !important;
+    }
+    .tabs__content div {
+        padding-left: 15px !important;
+    }
+    .tabs__content{
+        p,a{
+            padding-right: 10px;
+        }
+        
+    }
+}
+@media (max-width:500px){
+    .tabs{
+        .tabs__content{
+            display: block;
+            p{
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .tabs .tabs__content a, .tabs .tabs__content p {
+        padding-right: 0px;
+    }
+}
