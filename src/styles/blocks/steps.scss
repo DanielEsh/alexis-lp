@@ -1,0 +1,100 @@
+.steps {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    .steps__content {
+        margin-top: 170px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+        .steps__row{
+            position: relative;
+        }
+        .steps__bg {
+            width: 556px;
+            height: 300px;
+        }
+        .steps__desc_right {
+            z-index: 2;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+            background: #fff;
+            padding: 70px 60px 90px 120px;
+            position: absolute;
+            bottom: 20%;
+            left: 70%;
+        }
+
+        .steps__desc_left {
+            z-index: 2;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+            background: #fff;
+            padding: 70px 60px 90px 120px;
+            position: absolute;
+            bottom: 20%;
+            right: 70%;
+        }
+        span {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            font-size: 50px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #e0e0e0;
+        }
+
+        h3 {
+            width: 300px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 25px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #272727;
+
+        }
+
+        p {
+            width: 261px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.8;
+            letter-spacing: normal;
+            color: #616161;
+        }
+        .steps__desc_primary{
+            border-bottom: 3px solid $primary;
+        }
+        .steps__desc_green{
+            border-bottom: 3px solid $green;
+        }
+        .steps__desc_purple{
+            border-bottom: 3px solid $purple;
+        }
+        .steps__desc_orange{
+            border-bottom: 3px solid $orange;
+        }
+        .steps__bg_primary{
+            background: url(../img/steps-bg-1.png);
+        }
+        .steps__bg_green{
+            background: url(../img/steps-bg-2.png);
+        }
+        .steps__bg_purple{
+            background: url(../img/steps-bg-3.png);
+        }
+        .steps__bg_orange{
+            background: url(../img/steps-bg-4.png);
+        }
+    }
+}
