@@ -6,8 +6,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        
-
         .steps__row{
             position: relative;
         }
@@ -15,23 +13,19 @@
             width: 556px;
             height: 300px;
         }
-        .steps__desc_right {
-            z-index: 2;
+        .steps__desc{
             box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
             background: #fff;
-            padding: 70px 60px 90px 120px;
+            padding: 50px 60px 90px 120px;
+            z-index: 2;
             position: absolute;
             bottom: 20%;
+        }
+        .steps__desc_right {
             left: 70%;
         }
 
         .steps__desc_left {
-            z-index: 2;
-            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
-            background: #fff;
-            padding: 70px 60px 90px 120px;
-            position: absolute;
-            bottom: 20%;
             right: 70%;
         }
         span {
@@ -85,16 +79,36 @@
             border-bottom: 3px solid $orange;
         }
         .steps__bg_primary{
-            background: url(../img/steps-bg-1.png);
+            background: url(../img/steps-bg-1.png) center center;
         }
         .steps__bg_green{
-            background: url(../img/steps-bg-2.png);
+            background: url(../img/steps-bg-2.png) center center;;
         }
         .steps__bg_purple{
-            background: url(../img/steps-bg-3.png);
+            background: url(../img/steps-bg-3.png) center center;;
         }
         .steps__bg_orange{
-            background: url(../img/steps-bg-4.png);
+            background: url(../img/steps-bg-4.png) center center;;
         }
+    }
+}
+@media (max-width:1200px){
+    .steps__bg{
+    width: 100% !important;
+    background-size: cover;
+    }
+    .steps__desc{
+        padding: 10px 10px 50px 20px !important;
+        text-align: center !important;
+        position: static !important;
+    }
+    span{
+        position: static !important;
+    }
+    h3{
+        width: unset;
+    }
+    .steps .steps__content p{
+        width: unset;
     }
 }

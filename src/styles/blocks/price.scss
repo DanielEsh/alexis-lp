@@ -1,0 +1,98 @@
+.price {
+    background-color: #f7f7f7;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    .price-cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .card__item {
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+            background: #fff;
+            margin: 15px;
+            text-align: center;
+            h3 {
+                font-family: 'Poppins', sans-serif;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 4;
+                color: #313131;
+            }
+
+            .card__price {
+                
+                border-radius: 50%;
+                margin: 0 90px;
+                padding: 30px 40px;
+                color: white;
+
+                h4 {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 25px;
+                }
+
+                p {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 13px;
+                }
+            }
+
+            ul {
+                padding: 20px 0;
+
+                li {
+                    padding-bottom: 5px;
+                    font-family: 'Poppins', sans-serif;
+                    line-height: 2.67;
+                    font-size: 15px;
+                    color: #616161;
+                }
+            }
+
+            .btn {
+                text-transform: uppercase;
+                font-family: 'Poppins', sans-serif;
+                font-size: 16px;
+                font-weight: 600;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 5;
+                letter-spacing: normal;
+                text-align: center;
+                border-radius: 25px;
+                padding: 15px 40px;
+            }
+        }
+        .card__item_primary{
+            border-top: 4px solid $primary;
+            .card__price{
+                background: $primary;
+            }
+            .btn{
+                color: $primary;
+                border: 2px solid $primary;
+            }
+        }
+        .card__item_green{
+            border-top: 4px solid $green;
+            .card__price{
+                background: $green;
+            }
+            .btn{
+                color: $green;
+                border: 2px solid $green;
+            }
+        }
+        .card__item_purple{
+            border-top: 4px solid $purple;
+            .card__price{
+                background: $purple;
+            }
+            .btn{
+                color: $purple;
+                border: 2px solid $purple;
+            }
+        }
+    }
+}
