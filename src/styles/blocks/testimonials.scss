@@ -1,0 +1,96 @@
+.testimonials {
+    background: #3f4049;
+    padding-top: 145px;
+    padding-bottom: 150px;
+
+    .title,
+    .title__desc {
+        color: $white;
+    }
+
+    .swiper-slide {
+        img{
+            background: #3f4049;
+        }
+
+        .description {
+            position: absolute;
+            left: 399px;
+            top: 50px;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+            background-color: #ffffff;
+            padding: 40px 80px;
+            
+            
+
+            p {
+                width: 624px;
+                font-size: 15px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.8;
+                letter-spacing: normal;
+                text-align: left;
+                color: #616161;
+            }
+
+            .signature {
+                font-family: 'Sacramento', cursive;
+                font-size: 40px;
+                line-height: 2;
+                color: #272727;
+            }
+
+            .name {
+                text-transform: uppercase;
+                font-size: 18px;
+                font-weight: 500;
+                letter-spacing: normal;
+                text-align: left;
+                color: #272727;
+            }
+
+            .job {
+                font-size: 13px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                letter-spacing: normal;
+                text-align: left;
+                color: #fc5f45;
+            }
+        }
+    }
+    .swiper-pagination{
+        display: flex;
+        justify-content: flex-end;
+        span{
+            width: 18px;
+            height: 18px;
+            
+        }
+        .swiper-pagination-bullet-active{
+            background: #fc5f45;
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    .description{
+        width: unset !important;
+        top: 10px !important;
+        p{
+            width: unset !important;
+        }
+    }
+}
+@media(max-width:990px){
+    .avatar{
+        display: flex;
+        justify-content: center;
+    }
+    .description{
+        position: static !important;
+    }
+}

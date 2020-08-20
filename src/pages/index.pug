@@ -5,7 +5,9 @@ html(lang="en")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
         title Alexic
         link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet")
         link(rel="stylesheet", href="css/style.css")
+        link(rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css")
     body
         include common/header.pug
         block header
@@ -18,4 +20,6 @@ html(lang="en")
         include common/stats.pug
         include common/steps.pug
         include common/price.pug
+        include common/testimonials.pug
+        script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
         script(src="js/index.min.js")
