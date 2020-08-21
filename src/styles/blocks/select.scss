@@ -1,0 +1,90 @@
+.select {
+    padding-top: 145px;
+    padding-bottom: 150px;
+
+    .row-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .row {
+        margin-top: 40px;
+        display: flex;
+    }
+
+    .row__item {
+        margin: 20px 0 0 20px;
+        
+        .item__header {
+            display: flex;
+
+            h3 {
+                margin-left: 20px;
+                font-size: 18px;
+                font-weight: 500;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.44;
+                letter-spacing: normal;
+                text-align: left;
+                color: #272727;
+            }
+        }
+
+        .item__desc {
+            margin-top: 35px;
+            font-size: 15px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.8;
+            letter-spacing: normal;
+            text-align: left;
+            color: #616161;
+        }
+    }
+
+    .start {
+        padding-top: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            font-size: 25px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.04;
+            letter-spacing: normal;
+            text-align: center;
+            color: #272727;
+        }
+
+        a {
+            border-radius: 25px;
+            background-color: $primary;
+            font-size: 16px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #ffffff;
+            padding: 20px 40px;
+            margin-left: 60px;
+        }
+    }
+}
+
+@media (max-width:775px){
+    .row,.start{
+        flex-wrap: wrap;
+    }
+    .start{
+        a{
+            margin-left: 0 !important;
+            margin-top: 20px;
+        }
+    }
+}
