@@ -106,9 +106,15 @@
         position: static !important;
     }
     h3{
-        width: unset;
+        width: unset !important;
     }
     .steps .steps__content p{
-        width: unset;
+        width: unset !important;
+    }
+}
+
+@media (max-width:400px){
+    .steps .steps__content{
+
     }
 }

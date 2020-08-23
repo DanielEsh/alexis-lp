@@ -94,3 +94,11 @@
         position: static !important;
     }
 }
+@media(max-width:320px){
+    .title{
+        font-size: 35px !important;
+    }
+    .title__desc{
+        font-size: 10px !important;
+    }
+}

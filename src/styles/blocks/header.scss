@@ -139,6 +139,7 @@ header {
         .top-header__nav {
             position: relative;
             .menu {
+                display: none;
                 z-index: 0;
                 opacity: 0;
                 display: flex;

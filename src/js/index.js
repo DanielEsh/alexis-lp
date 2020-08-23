@@ -17,7 +17,7 @@ console.log(3)
 
 console.log(2)
 
-var mySwiper = new Swiper('.swiper-container', {
+const mySwiper = new Swiper('.swiper-container', {
     direction: 'horizontal',
     loop: true,
     pagination: {
@@ -25,3 +25,4 @@ var mySwiper = new Swiper('.swiper-container', {
       clickable: true
     },
   })
+

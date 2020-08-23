@@ -29,11 +29,13 @@
     }
 
     .portfolio__content {
+        
         .portfolio__row {
             display: flex;
             .portfolio-item {
-                // width: 360px;
-                // height: 288px;
+                display: flex;
+                width: 360px;
+                height: 288px;
                 // background: #000;
                 margin: 10px;
             }
@@ -43,6 +45,7 @@
 
 @media (max-width:$mediaLaptop){
     .portfolio__row{
+        justify-content: space-between;
         flex-wrap: wrap;
     }
 }

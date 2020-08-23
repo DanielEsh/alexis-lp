@@ -56,3 +56,16 @@
         }
     }
 }
+
+@media (max-width:770px){
+    .stats{
+        background-size: cover;
+        .cards{
+            display: block;
+            .stats__item{
+                margin-bottom: 100px;
+            }
+        }
+    }
+    
+}

@@ -20,7 +20,7 @@
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
         width: 650px;
         .about__content{
-            padding: 30px 80px 60px 80px;
+            padding: 30px 80px 100px 80px;
         }
         h2 {
             font-size: 50px;
@@ -33,6 +33,7 @@
         }
 
         p {
+            margin-top: 30px;
             font-family: 'Poppins', sans-serif;
             font-size: 15px;
             font-weight: normal;
@@ -42,34 +43,35 @@
             letter-spacing: normal;
             color: #616161;
         }
-        .about__border{
-            height: 3px;
-            display: flex;
-            .border-primary{
-                height: 3px;
-                background: $primary;
-                width: 25%;
-            }
-            .border-green{
-                height: 3px;
-                background: $green;
-                width: 25%;
-            }
-            .border-purple{
-                height: 3px;
-                background: $purple;
-                width: 25%;
-            }
-            .border-orange{
-                height: 3px;
-                background: $orange;
-                width: 25%;
-            }
-            
-        }
+        
     }
 }
-@media(max-width:$mediaTablet){
+.about__border{
+    height: 3px;
+    display: flex;
+    .border-primary{
+        height: 3px;
+        background: $primary;
+        width: 25%;
+    }
+    .border-green{
+        height: 3px;
+        background: $green;
+        width: 25%;
+    }
+    .border-purple{
+        height: 3px;
+        background: $purple;
+        width: 25%;
+    }
+    .border-orange{
+        height: 3px;
+        background: $orange;
+        width: 25%;
+    }
+    
+}
+@media(max-width:830px){
     .about{
         margin-top: 50px;
     }
@@ -93,7 +95,7 @@
         width: 550px;
         left: 20%;
         .about__content {
-            padding: 10px 30px 20px 30px;
+            padding: 10px 30px 60px 30px;
         }
     }
 }
