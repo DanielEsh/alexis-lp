@@ -79,16 +79,20 @@
             border-bottom: 3px solid $orange;
         }
         .steps__bg_primary{
-            background: url(../img/steps-bg-1.png) center center;
+            background: -webkit-linear-gradient(top, rgba(255, 0, 0, 0) 0%, rgba(252, 95, 69, 0.1) 100%), linear-gradient(to bottom, rgba(255, 0, 0, 0) 0%, rgba(252, 95, 69, 0.1) 100%), url(../img/step-1.jpg) no-repeat top;
+            background-size: cover;
         }
         .steps__bg_green{
-            background: url(../img/steps-bg-2.png) center center;;
+            background: -webkit-linear-gradient(top, rgba(255, 0, 0, 0) 0%, rgba(56, 198, 149, 0.1) 100%), linear-gradient(to bottom, rgba(255, 0, 0, 0) 0%, rgba(56, 198, 149, 0.1) 100%), url(../img/step-2.jpg) no-repeat top;
+            background-size: cover;
         }
         .steps__bg_purple{
-            background: url(../img/steps-bg-3.png) center center;;
+            background: -webkit-linear-gradient(top, rgba(255, 0, 0, 0) 0%, rgba(178, 124, 245, 0.1) 100%), linear-gradient(to bottom, rgba(255, 0, 0, 0) 0%, rgba(178, 124, 245, 0.1) 100%), url(../img/step-3.jpg) no-repeat top;
+            background-size: cover;
         }
         .steps__bg_orange{
-            background: url(../img/steps-bg-4.png) center center;;
+            background: -webkit-linear-gradient(top, rgba(255, 0, 0, 0) 0%, rgba(254, 185, 96, 0.1) 100%), linear-gradient(to bottom, rgba(255, 0, 0, 0) 0%, rgba(254, 185, 96, 0.1) 100%), url(../img/step-4.jpg) no-repeat top;
+            background-size: cover;
         }
     }
 }
@@ -110,11 +114,5 @@
     }
     .steps .steps__content p{
         width: unset !important;
-    }
-}
-
-@media (max-width:400px){
-    .steps .steps__content{
-
     }
 }

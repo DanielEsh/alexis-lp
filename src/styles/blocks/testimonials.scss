@@ -1,29 +1,35 @@
 .testimonials {
-    background: #3f4049;
-    padding-top: 145px;
-    padding-bottom: 150px;
+    background: url(../img/4.jpg);
+    background-attachment: fixed;
 
+    .overlay{
+        background: rgba(38, 39, 50, 0.85);
+        padding-top: 145px;
+        padding-bottom: 150px;
+        
+    }
     .title,
     .title__desc {
         color: $white;
     }
 
-    .swiper-slide {
-        img{
-            background: #3f4049;
+    .swiper-slide{
+        .swiper-slide__img{
+            width: 384px;
+            height: 399px;
         }
 
-        .description {
+        .swiper-slide__description{
             position: absolute;
-            left: 399px;
-            top: 50px;
+            left: 384px;
+            top: 40px;
             box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
             background-color: #ffffff;
             padding: 40px 80px;
             
             
 
-            p {
+            .swiper-slide__text{
                 width: 624px;
                 font-size: 15px;
                 font-weight: normal;
@@ -35,14 +41,14 @@
                 color: #616161;
             }
 
-            .signature {
+            .swiper-slide__signature {
                 font-family: 'Sacramento', cursive;
                 font-size: 40px;
                 line-height: 2;
                 color: #272727;
             }
 
-            .name {
+            .sswiper-slide__name {
                 text-transform: uppercase;
                 font-size: 18px;
                 font-weight: 500;
@@ -51,7 +57,7 @@
                 color: #272727;
             }
 
-            .job {
+            .swiper-slide__job {
                 font-size: 13px;
                 font-weight: normal;
                 font-stretch: normal;
@@ -77,7 +83,7 @@
 }
 
 @media (max-width: 1200px){
-    .description{
+    .swiper-slide__description{
         width: unset !important;
         top: 10px !important;
         p{
@@ -86,11 +92,11 @@
     }
 }
 @media(max-width:990px){
-    .avatar{
+    .swiper-slide__img{
         display: flex;
         justify-content: center;
     }
-    .description{
+    .swiper-slide__description{
         position: static !important;
     }
 }

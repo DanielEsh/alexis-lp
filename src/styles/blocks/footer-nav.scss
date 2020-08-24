@@ -1,7 +1,7 @@
 .footer-nav {
     padding-bottom: 130px;
 
-    .bottom-nav {
+    .nav_bottom {
         background-color: #3f4049;
         display: flex;
         justify-content: space-around;
@@ -28,7 +28,7 @@
         }
         .social{
             padding-top: 20px;
-            img{
+            svg{
                 margin-right: 15px;
             }
         }
@@ -46,12 +46,8 @@
 }
 
 footer {
-    // background: url(../img/footerbg.png) bottom center no-repeat;
-    background: url(../img/bg1.jpg) no-repeat;
+    background: url(../img/6.jpg) no-repeat;
     background-size: cover;
-    // background-position-y: top;
-    // width: 100vw;
-    // height: 100vh;
 }
 
 @media (max-width:990px){

@@ -3,13 +3,23 @@
 
 
 header {
-    background: url(../img/header-background.png) center center;
+    padding-top: 80px;
+    background: url(../img/1.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
-
+.header__overlay{
+    padding-top: 60px;
+    background: rgba(38, 39, 50, 0.85);
+}
 .top-header {
+    z-index: 100;
     padding: 24px 0;
     background: $white;
-
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.25);
     .container {
         display: flex;
         justify-content: space-between;
@@ -123,6 +133,9 @@ header {
 }
 
 @media (max-width:1200px) {
+    header{
+        background: url(../img/1.jpg) no-repeat center;
+    }
     .top-header {
         .top-header__nav {
             .menu {
@@ -173,6 +186,9 @@ header {
 }
 
 @media (max-width: 550px){
+    .content .content__title{
+        font-size: 35px;
+    }
     .container{
         padding: 0 40px;
     }

@@ -8,21 +8,23 @@
     .about__img {
         width: 555px;
         height: 700px;
-        background: url(../img/about-img.png);
+        background: url(../img/4.jpg) no-repeat top;
+        background-size: cover;
         position: absolute;
     }
 
     .about__desc {
         position: relative;
         left: 40%;
-        top: 80px;
+        top: 60px;
         background: #fff;
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
         width: 650px;
         .about__content{
-            padding: 30px 80px 100px 80px;
+            padding: 90px 80px 100px 80px;
         }
         h2 {
+            font-family: 'Libre Baskerville', serif;
             font-size: 50px;
             font-weight: bold;
             font-stretch: normal;

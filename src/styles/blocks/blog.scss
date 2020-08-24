@@ -7,23 +7,24 @@
         display: flex;
     }
 
-    .post-mini {
+    .post_mini{
         display: flex;
         flex-direction: column;
     }
 
-    .main-post{
+    .post_main{
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
         background-color: #ffffff;
         height: 675px;
-        .post-info{
+        .post__info{
+            color: $white;
             margin-left: 50px;
             margin-top: -50px;
             padding-bottom: 35px;
         }
-        .post-content{
+        .post__content{
             padding: 0 50px 35px 50px;
-            p{
+            .post__desc{
                 margin-top: 35px;
             }
         }
@@ -37,21 +38,21 @@
         height: 210px;
     }
 
-    .post-info {
+    .post__info{
         display: flex;
         align-content: center;
         
-        h3 {
+        .post__author {
             font-size: 15px;
             font-weight: 500;
             font-stretch: normal;
             font-style: normal;
             line-height: 2.33;
             letter-spacing: normal;
-            color: #fc5f45;
+            // color: #fc5f45;
         }
 
-        p {
+        .post__data{
             font-size: 13px;
             font-weight: normal;
             font-stretch: normal;
@@ -63,7 +64,7 @@
         }
     }
 
-    .post-title {
+    .post__title {
         // 
         font-size: 20px;
         font-weight: 500;
@@ -71,13 +72,12 @@
         color: #272727;
     }
 
-    .post-desc {
+    .post__desc {
         font-size: 15px;
         font-weight: normal;
         font-stretch: normal;
         font-style: normal;
         letter-spacing: normal;
-        // text-align: left;
         line-height: 1.8;
         color: #616161;
 
@@ -87,13 +87,13 @@
         }
     }
     .post_primary{
-        h3.author{
+        .post__author{
             color: $primary;
         }
         border-bottom: solid 3px $primary;
     }
     .post_green{
-        h3.author{
+        .post__author{
             color: $green;
         }
         a{
@@ -102,7 +102,7 @@
         border-bottom: solid 3px $green;
     }
     .post_purple{
-        h3.author{
+        .post__author{
             color: $purple;
         }
         a{
@@ -111,7 +111,7 @@
         border-bottom: solid 3px $purple;
     }
     .post_orange{
-        h3.author{
+        .post__author{
             color: $orange;
         }
         a{
@@ -130,11 +130,11 @@
     .blog .posts{
         display: block;
     }
-    .main-post{
+    .post_main{
         width: 500px;
         margin: 30px auto;
     }
-    .post-mini{
+    .post_mini{
         display: block !important;
     }
     .post{
@@ -143,7 +143,7 @@
     }
 }
 @media(max-width:550px){
-    .main-post{
+    .post_main{
         width: 95%;
         margin: 30px auto;
     }
@@ -153,14 +153,14 @@
     }
 }
 @media (max-width:435px){
-    .blog .main-post{
+    .blog .post_main{
         height: unset;
     }
-    .blog .main-post .post-info{
+    .blog .post_main .post__info{
         margin-top: 0;
         margin-left: 20px;
     }
-    .blog .main-post .post-content {
+    .blog .post_main .post__content {
         padding: 0 20px 5px 20px;
     }
     .blog .post {
