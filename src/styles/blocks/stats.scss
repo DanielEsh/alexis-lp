@@ -1,14 +1,14 @@
 .stats {
-    background: url(../img/stats-bg.png) no-repeat center center;
+    background: url(../img/stats-bg.png) no-repeat top;
     padding-top: 150px;
     padding-bottom: 80px;
-    // margin: 0;
     .cards {
         justify-content: space-between;
     }
 
     .stats__item {
         text-align: center;
+       
 
         .stats__title {
             font-family: 'Poppins', sans-serif;

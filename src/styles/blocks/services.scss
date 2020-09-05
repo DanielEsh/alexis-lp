@@ -38,6 +38,10 @@
         padding: 65px 30px;
         text-align: center;
         margin:0 10px;
+        transition: ease 0.2s all;
+        &:hover{
+            transform:scale(1.1)
+        }
     }
     .card__title {
         font-family: 'Poppins', sans-serif;

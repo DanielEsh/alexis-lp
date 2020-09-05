@@ -17,7 +17,10 @@ function readyReload(cb) {
           server: 'build',
           notify: false,
           open: true,
-          cors: true
+          cors: true,
+          ui: {
+            port: 8080
+        }
       })
   
       gulp.watch('src/img/*.{gif,png,jpg,svg,webp}', gulp.series(imgMin, readyReload))

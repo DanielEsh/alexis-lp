@@ -73,6 +73,13 @@
             color: #ffffff;
             padding: 15px 40px;
             margin-left: 60px;
+            border: 2px solid $primary;
+            transition: ease 0.2s all;
+            &:hover{
+                background-color: $white;
+                color: $primary;
+                border: 2px solid $primary;
+            }
         }
     }
 }

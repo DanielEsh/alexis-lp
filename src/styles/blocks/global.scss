@@ -96,4 +96,12 @@ body{
     margin-bottom: 80px;
 }
 
-
+.overflow{
+    overflow: hidden;
+}
+html {
+    scroll-behavior: auto;
+}
+@media screen and (prefers-reduced-motion: reduce) {
+	
+}

@@ -18,7 +18,11 @@
         left: 40%;
         top: 60px;
         background: #fff;
-        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+        box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+                    0 2px 2px rgba(0,0,0,0.12), 
+                    0 4px 4px rgba(0,0,0,0.12), 
+                    0 8px 8px rgba(0,0,0,0.12),
+                    0 16px 16px rgba(0,0,0,0.12);
         width: 650px;
         .about__content{
             padding: 90px 80px 100px 80px;

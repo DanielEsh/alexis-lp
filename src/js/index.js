@@ -1,21 +1,25 @@
+
+
+
 const menu = document.querySelector('.menu')
 const burger = document.querySelector('.burger-menu')
-console.log(burger)
-menu.addEventListener('click', () => {
-    console.log(1)
-    toggleMenu()
-})
-burger.addEventListener('click', () => {
-    console.log(1)
-    toggleMenu()
-})
+const body = document.querySelector('body')
+const playVideo = document.querySelector('.play')
+
 const toggleMenu = () => {
     menu.classList.toggle('active')
     burger.classList.toggle('active')
+    body.classList.toggle('overflow')
 }
-console.log(3)
 
-console.log(2)
+menu.addEventListener('click', () => {
+    toggleMenu()
+})
+burger.addEventListener('click', () => {
+    toggleMenu()
+})
+
+
 
 const mySwiper = new Swiper('.swiper-container', {
     direction: 'horizontal',
@@ -25,4 +29,17 @@ const mySwiper = new Swiper('.swiper-container', {
       clickable: true
     },
   })
+
+playVideo.addEventListener('click', () => {
+    console.log('123')
+})
+
+
+
+
+// const getPortfolio = () => {
+//     return fetch('http://localhost:3000/portfolio')
+//     .then(response => response.json())
+//     .then(portfolio => portfolio)
+// }
 

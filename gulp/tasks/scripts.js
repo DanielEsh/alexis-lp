@@ -3,7 +3,7 @@ const webpack = require('webpack-stream')
 const eslint = require('gulp-eslint')
 
 module.exports = function script() {
-    return gulp.src('src/js/index.js')
+    return gulp.src('src/js/*.{js, json}')
       .pipe(webpack({
         mode: process.env.NODE_ENV,
         output: {
