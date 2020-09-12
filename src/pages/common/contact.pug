@@ -2,14 +2,24 @@ section.contact
     .container
         h2.title Get in Touch.
         p.title__desc We understand your requirement and provide quality works.
-        form().form
+        form()#contact-form
             .row
-                input(type="text" placeholder="Your Name")
-                input(type="text" placeholder="Your Email")
+                .form__item
+                    input(type="text" placeholder="Your Name").form__input#name
+                    .form__error
+                .form__item
+                    input(type="text" placeholder="Your Email").form__input#email
+                    .form__error
             .row
-                input(type="text" placeholder="Subject")
-                input(type="text" placeholder="Project Budget")
-            .row.test
-                textarea(placeholder='Message')
+                .form__item
+                    input(type="text" placeholder="Subject").form__input#subject
+                    .form__error
+                .form__item    
+                    input(type="text" placeholder="Project Budget").form__input#budget
+                    .form__error
+            .row
+                .form__item.form__item_textarea
+                    textarea(placeholder='Message')#message
+                    .form__error
             .row
                 button(type="submit") Send Message    

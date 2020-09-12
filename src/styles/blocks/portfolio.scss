@@ -11,7 +11,6 @@
                 display: flex;
                 width: 360px;
                 height: 288px;
-                background: url(../img/portfolio_1.png);
                 margin: 10px;
                 overflow: hidden;
                 
@@ -56,6 +55,33 @@
             }
         }
     }
+}
+#portfolio1{
+    background: url(../img/portfolio_1.png);
+}
+#portfolio2{
+    background: url(../img/portfolio2.png);
+}
+#portfolio3{
+    background: url(../img/portfolio3.png);
+}
+#portfolio4{
+    background: url(../img/portfolio4.png);
+}
+#portfolio5{
+    background: url(../img/portfolio5.png);
+}
+#portfolio6{
+    background: url(../img/portfolio6.png);
+}
+#portfolio7{
+    background: url(../img/portfolio7.png);
+}
+#portfolio8{
+    background: url(../img/portfolio8.png);
+}
+#portfolio9{
+    background: url(../img/portfolio9.png);
 }
 
 @media (max-width:$mediaLaptop){
