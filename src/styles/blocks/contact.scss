@@ -90,13 +90,13 @@
         flex-direction: column;
         
     }
-    .test{
+    .form__item_textarea{
         width: 360px !important;
     }
     
 }
 @media (max-width:450px){
-    .test{
+    .form__item_textarea{
         width: 260px!important;
     }
     input{
